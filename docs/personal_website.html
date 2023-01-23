@@ -17,22 +17,22 @@
 
   .hero {
       color: #333333;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Poppins';
   }
 
   .link {
       color: #333333;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Poppins';
   }
 
   .footer {
       color: #333333;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Poppins';
   }
 
   .photography {
       color: #333333;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Poppins';
   }
 
   .journalism {
@@ -46,10 +46,11 @@
 </style>
   <body>
     <section class="hero">
-      <div class="hero-body content">
+      <div class="hero">
           <p class="title has-text-centered">
               ahan penkar
           </p>
+        
           <div class="columns">
               <div class="column is-half is-multiline content is-offset-one-quarter">
                   <p class="subtitle">
@@ -70,7 +71,8 @@
           </div>
       </div>
   </section>
-  <section class="hero is-info">
+<div class="container is-fluid">
+  <section class="hero">
     <div class="hero-body">
       <p class="title">
         Projects
@@ -80,32 +82,55 @@
     </div>
   </section>
     <div class="columns is-multiline content">
-        <div class="column is-one-third">
-            <h4>
-                <a class="link" href="https://caravanmagazine.in/modimeter/c/manifesto"
-                    aria-label="Go to manifesto promises from 2019" target="_blank">
-                    <figure class="image is-3by2">
-                        <img alt="Contemplative Modi" src="./images/manifesto.png">
-                    </figure>
-                    Evaluating the promises made by BJP's 2014 Indian election manifesto. 
-            </h4>
-            <p>Led a team of interns to evaluate and fact check over 400 promises made by the incumbent BJP government before the 2019 election.</a></p></div>
-          <div class="column is-one-third">
-            <h4>
-              
-              <a class="link" href="https://caravanmagazine.in/modimeter/hugs"
-                  aria-label="Go to manifesto promises from 2019" target="_blank">
-                  <figure class="image is-3by2">
-                      <img alt="Contemplative Modi" src="https://caravan-b.storage.googleapis.com/interactives/maps/countries-visited/usa.jpg?v=1.4">
-                  </figure>
-                  A fun piece reading into who the Indian Prime Minister likes to hug. 
-          </h4>
-          <p>Collected data and conecptualised this piece as part of the Modi Meter project for The Caravan</a></p></div>
+
+<!-- Make a few cards for my portfolio using Bulma-->
+
+<div class="column is-one-third">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-640x480">
+          <img src="./images/manifesto.png">
+        </figure>
+      </div>
+      <div class="card-content">
+          <p class="title is-4">
+              <a href="https://caravanmagazine.in/modimeter/c/manifesto">Evaluating the promises made by BJP's 2014 Indian election manifesto. </a>
+          </p>
+          <span class="tag is-light">The Caravan</span>
+      </div>
+        <div class="card-content">
+          <p class="content">
+            Led a team of interns to evaluate and fact check over 400 promises made by the incumbent BJP government before the 2019 election.
+          </p>
+        </div>
+   </div>
+  </div>
+  <div class="column is-one-third">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-640x480">
+          <img src="https://caravan-b.storage.googleapis.com/interactives/maps/countries-visited/usa.jpg?v=1.4">
+        </figure>
+        <span class="tag is-light">The Caravan</span>
+      </div>
+      <div class="card-content">
+          <p class="title is-4">
+              <a href="https://caravanmagazine.in/modimeter/hugs">A fun piece reading into who the Indian Prime Minister likes to hug </a>
+          </p>
+      </div>
+        <div class="card-content">
+          <p class="content">
+            Collected data and conecptualised this piece as part of the Modi Meter project for The Caravan.
+          </p>
+        </div>
+   </div>
+  </div>
+          
   </section>    
 
 
 
-  <section class="hero is-info">
+  <section class="hero">
     <div class="hero-body">
       <p class="title">
         Reported Pieces
@@ -116,71 +141,132 @@
   </section>
     <div class="columns is-multiline content">
         <div class="column is-one-third">
-            <h4>
-                <a class="link" href="https://caravanmagazine.in/media/facebook-used-by-chinese-hackers-to-attack-cambodian-government-opposition-hun-sen"
-                    aria-label="Go Facebook Cambodia piece" target="_blank">
-                    <figure class="image is-3by2">
-                        <img alt="Cambodia illustration" src="https://lh3.googleusercontent.com/tEBv5WU3rGv9XnXHnR5-SLmBUucxmHr9m-NYcLkQdxtz5F3uK5KU8bMwRqgNHDP95M2LLT-5UzGcKA8oI-B8B5k95-3lxcdetLynTs4=s1900?nocheck=gplus">
-                    </figure>
-                    Facebook internal documents reveal Chinese hackers attacking Cambodian opposition party 
-            </h4>
-            <p>Worked on a set of documents provided to Congress by Frances Haugen.</a></p></div>
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-640x480">
+                  <img src="https://lh3.googleusercontent.com/tEBv5WU3rGv9XnXHnR5-SLmBUucxmHr9m-NYcLkQdxtz5F3uK5KU8bMwRqgNHDP95M2LLT-5UzGcKA8oI-B8B5k95-3lxcdetLynTs4=s1900?nocheck=gplus" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                  <p class="title is-4">
+                      <a href="https://caravanmagazine.in/media/facebook-used-by-chinese-hackers-to-attack-cambodian-government-opposition-hun-sen">Facebook internal documents reveal Chinese hackers attacking Cambodian opposition party</a>
+                  </p>
+              </div>
+                <div class="card-content">
+                  <p class="content">
+                    Worked on a set of documents provided to Congress by Frances Haugen.
+                  </p>
+                </div>
+           </div>
+          </div>
           <div class="column is-one-third">
-            <h4>
-              <a class="link" href=""
-                  aria-label="Go to Mohammed Nasir investigation" target="_blank">
-                  <figure class="image is-3by2">
-                      <img alt="Cover image of Mohammed Nasir" src="">
-                  </figure>
-                  Glaring gaps in Delhi Police investigation into gun attack on riot victim Mohd Nasir 
-          </h4>
-          <p>On 24 February, Nasir, a resident of North Ghonda, in Delhi, lost his left eye to a gunshot when he was attacked during the violence that erupted in the north-east district.</a></p></div>
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-640x480">
+                  <img src="https://lh3.googleusercontent.com/YkFDtsy9-y4FxnW6PtyrkkJTnCLp8kLi-NjERdXIzZk6IB1c9ysSlPg-mOgjtuxZ7vYhAUYCL9FLaxaMSqaRZZGT=s1900?nocheck=gplus" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                  <p class="title is-4">
+                      <a href="https://caravanmagazine.in/conflict/delhi-riots-mohammad-nasir-police-fir-64-statement">Glaring gaps in Delhi Police investigation into gun attack on riot victim Mohd Nasir</a>
+                  </p>
+              </div>
+                <div class="card-content">
+                  <p class="content">
+                    On 24 February, Nasir, a resident of North Ghonda, in Delhi, lost his left eye to a gunshot when he was attacked during the violence that erupted in the north-east district.
+                  </p>
+                </div>
+           </div>
+          </div>
           <div class="column is-one-third">
-            <h4>
-                <a class="link" href="Hindutva groups turn to cow urine for protection from COVID-19"
-                    aria-label="Go to Cow Urine piece" target="_blank">
-                    <figure class="image is-3by2">
-                        <img alt="event pic" src="https://lh3.googleusercontent.com/omlPgDltqtPnkU9yCi0JLvx29shESeAmxmRe1YL0lQ0CMEBRJ_-akyIxJ6BTpd90ITIEv-Ap_qHdNmqIudkr4neF=s1900?nocheck=gplus">
-                    </figure>
-                    Elixir of Lies
-            </h4>
-            <p>Hindutva groups turn to cow urine for protection from COVID-19</a></p></div>
-            <div class="column is-one-third">
-            <h4>
-                <a class="link" href="https://caravanmagazine.in/caste/how-kejriwal-is-failing-delhis-sewage-workers"
-                    aria-label="Go Facebook Cambodia piece" target="_blank">
-                    <figure class="image is-3by2">
-                        <img alt="Kejriwal inaugration" src="https://lh3.googleusercontent.com/t4cxgEI9SsxmqLsG8Ly_o7D8sFXOa7DeMVDAODdUKcm-e3OMJdOtQJBNxRCDhQ5kyP0R3UjsQ6z2p8UO-DC1sn4q=s1900?nocheck=gplus">
-                    </figure>
-                    How Kejriwal is failing Delhi’s sewage workers 
-            </h4>
-            <p>A look into the Delhi State Governments failure to eliminate manual scavenging.</a></p></div>
-            <div class="column is-one-third">
-              <h4>
-                  <a class="link" href="https://caravanmagazine.in/communities/kashmiris-denied-housing-muslim-delhi"
-                      aria-label="Go Facebook Cambodia piece" target="_blank">
-                      <figure class="image is-3by2">
-                          <img alt="Kashmir mural" src="https://lh3.googleusercontent.com/C5wX94pTK4y7qi7w_gaYGS6JAfhy6-maOO1TJUwhWAYBbRWPs8rICwqOt_XqQRS5AqJYwcBK0gvoGrvGnK3Gv6427Ro=s1900?nocheck=gplus">
-                      </figure>
-                      No Kashmiris please 
-              </h4>
-              <p>Why have Kashmiris been denied housing in even Muslim majority areas?</a></p></div>
-              <div class="column is-one-third">
-                <h4>
-                    <a class="link" href="https://caravanmagazine.in/labour/in-photos-migrant-workers-face-police-violence-and-hunger-escaping-delhi-during-lockdown"
-                        aria-label="Go to lockdown photo essay" target="_blank">
-                        <figure class="image is-3by2">
-                            <img alt="Migrant pic Shahid" src="https://lh3.googleusercontent.com/iY4xvRo2blPveEGHpX4JBE6jqiPVDSfvhfC3ISht5bzBW3o4y59cAt8yzKrOjhdfHtaw2mXBuItLnS9snxXSWzD60A=s1900?nocheck=gplus">
-                        </figure>
-                        A Lockdown and a Hard Place
-                </h4>
-                <p>A photo essay about the plight of millions of migrants trying to escape a sudden and brutal lockdown in March 2020.</a></p></div>
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-640x480">
+                  <img src="https://lh3.googleusercontent.com/omlPgDltqtPnkU9yCi0JLvx29shESeAmxmRe1YL0lQ0CMEBRJ_-akyIxJ6BTpd90ITIEv-Ap_qHdNmqIudkr4neF=s1900?nocheck=gplus">
+                </figure>
+              </div>
+              <div class="card-content">
+                  <p class="title is-4">
+                      <a href="https://caravanmagazine.in/religion/hindutva-groups-cow-urine-protection-covid19">Elixir of Lies</a>
+                  </p>
+              </div>
+                <div class="card-content">
+                  <p class="content">
+                    Hindutva groups turn to cow urine for protection from COVID-19
+                  </p>
+                </div>
+           </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-640x480">
+                  <img src="https://lh3.googleusercontent.com/t4cxgEI9SsxmqLsG8Ly_o7D8sFXOa7DeMVDAODdUKcm-e3OMJdOtQJBNxRCDhQ5kyP0R3UjsQ6z2p8UO-DC1sn4q=s1900?nocheck=gplus">
+                </figure>
+              </div>
+              <div class="card-content">
+                  <p class="title is-4">
+                      <a href="https://caravanmagazine.in/caste/how-kejriwal-is-failing-delhis-sewage-workers">How Kejriwal is failing Delhi’s sewage workers </a>
+                  </p>
+              </div>
+                <div class="card-content">
+                  <p class="content">
+                    A look into the Delhi State Governments failure to eliminate manual scavenging.
+                  </p>
+                </div>
+           </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-640x480">
+                  <img src="https://lh3.googleusercontent.com/C5wX94pTK4y7qi7w_gaYGS6JAfhy6-maOO1TJUwhWAYBbRWPs8rICwqOt_XqQRS5AqJYwcBK0gvoGrvGnK3Gv6427Ro=s1900?nocheck=gplus">
+                </figure>
+              </div>
+              <div class="card-content">
+                  <p class="title is-4">
+                      <a href="https://caravanmagazine.in/communities/kashmiris-denied-housing-muslim-delhi">No Kashmiris please </a>
+                  </p>
+              </div>
+                <div class="card-content">
+                  <p class="content">
+                    Why have Kashmiris been denied housing in Muslim majority areas?
+                  </p>
+                </div>
+           </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-640x480">
+                  <img src="https://lh3.googleusercontent.com/iY4xvRo2blPveEGHpX4JBE6jqiPVDSfvhfC3ISht5bzBW3o4y59cAt8yzKrOjhdfHtaw2mXBuItLnS9snxXSWzD60A=s1900?nocheck=gplus">
+                </figure>
+              </div>
+              <div class="card-content">
+                  <p class="title is-4">
+                      <a href="https://caravanmagazine.in/labour/in-photos-migrant-workers-face-police-violence-and-hunger-escaping-delhi-during-lockdown">A Lockdown and a Hard Place </a>
+                  </p>
+              </div>
+                <div class="card-content">
+                  <p class="content">
+                    A photo essay about the plight of millions of migrants trying to escape a sudden and brutal lockdown in March 2020
+                  </p>
+                </div>
+           </div>
+          </div>
   </section>
 
 
 
-  <section class="section journalism"><a id="journalism">
-    <h1 class="title has-text-centered">Video Production</h1>
+  <section class="hero">
+    <div class="hero-body">
+      <p class="title">
+        Video Production
+      </p>
+      <p class="subtitle">
+        Some Video stories where i worked as a producer. 
+    </div>
+  </section>
     <div class="columns is-multiline content">
         <div class="column is-one-third">
             <h4>
@@ -217,7 +303,7 @@
                 <a class="link" href="https://www.youtube.com/watch?v=gXLTs5-DRZY"
                     aria-label="Go Facebook Cambodia piece" target="_blank">
                     <figure class="image is-3by2">
-                        <img alt="Kashmir trans cover pic" src="https://lh3.googleusercontent.com/t4cxgEI9SsxmqLsG8Ly_o7D8sFXOa7DeMVDAODdUKcm-e3OMJdOtQJBNxRCDhQ5kyP0R3UjsQ6z2p8UO-DC1sn4q=s1900?nocheck=gplus">
+                        <img alt="Kashmir trans cover pic" src="">
                     </figure>
                     A medical camp in Srinagar to help transgender people who have been passed over in the pandemic 
             </h4>
@@ -243,7 +329,7 @@
                 </h4>
                 <p>An interview with Mohammed Minhajuddin, who spoke about the ordeal he endured on the night of December 15, 2019. </a></p></div>
   </section>       
-      
+</div>     
       
       
       

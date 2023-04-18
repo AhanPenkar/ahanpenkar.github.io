@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+  </head>
+
+  <body>
+    <div class="title-content">
+      <div class="body-text">
+        <h1>Image-based scrollytelling template</h1>
+
+        <h3>Lorem ipsum</h3>
+      </div>
+    </div>
+    <div class="body-text">
+      <p>
+        Donec lacinia, tortor ut pulvinar tincidunt, ipsum libero congue mi, tempor eleifend neque
+        magna et nibh. Phasellus congue urna orci, vitae pulvinar nisl consequat in. Vestibulum
+        ligula odio, malesuada porta tristique at, porttitor vel mi. Maecenas gravida rhoncus
+        elementum. Fusce euismod ex ut mi porttitor, quis molestie ex congue. Integer eget congue
+        justo, ac facilisis mi.
+      </p>
+      <p>
+        Donec lacinia, tortor ut pulvinar tincidunt, ipsum libero congue mi, tempor eleifend neque
+        magna et nibh. Phasellus congue urna orci, vitae pulvinar nisl consequat in. Vestibulum
+        ligula odio, malesuada porta tristique at, porttitor vel mi. Maecenas gravida rhoncus
+        elementum. Fusce euismod ex ut mi porttitor, quis molestie ex congue. Integer eget congue
+        justo, ac facilisis mi.
+      </p>
+    </div>
+    <section id="scrolly" class="scrolly-container">
+      <div class="sticky-thing">
+        <img src="image1.jpg">
+      </div>
+
+      <div class="steps-container">
+        <div class="step">
+          <p>Step one.</p>
+        </div>
+        <div class="step" id="step2">
+          <p>Step two.</p>
+        </div>
+        <div class="step" id="step3">
+          <p>Step three.</p>
+        </div>
+        <div class="step" id="step4">
+          <p>Step four.</p>
+        </div>
+        <div class="step" id="step5">
+          <p>Step five.</p>
+        </div>
+      </div>
+    </section>
+    <div class="body-text">
+      <p>
+        Donec lacinia, tortor ut pulvinar tincidunt, ipsum libero congue mi, tempor eleifend neque
+        magna et nibh. Phasellus congue urna orci, vitae pulvinar nisl consequat in. Vestibulum
+        ligula odio, malesuada porta tristique at, porttitor vel mi. Maecenas gravida rhoncus
+        elementum. Fusce euismod ex ut mi porttitor, quis molestie ex congue. Integer eget congue
+        justo, ac facilisis mi.
+      </p>
+      <p>
+        Donec lacinia, tortor ut pulvinar tincidunt, ipsum libero congue mi, tempor eleifend neque
+        magna et nibh. Phasellus congue urna orci, vitae pulvinar nisl consequat in. Vestibulum
+        ligula odio, malesuada porta tristique at, porttitor vel mi. Maecenas gravida rhoncus
+        elementum. Fusce euismod ex ut mi porttitor, quis molestie ex congue. Integer eget congue
+        justo, ac facilisis mi.
+      </p>
+    </div>
+
+    <script>
+      
+      //  scrollytelling code goes here
+      d3.select("#step2").on('stepin', function() {
+        d3.select("img").attr("src", "image2.jpg")
+      })
+
+      d3.select("#step3").on('stepin', function() {
+        d3.select("img").attr("src", "image1.jpg")
+      })
+
+      d3.select("#step4").on('stepin', function() {
+        d3.select("img").attr("src", "image2.jpg")
+      })
+
+    </script>
+
+    <script>
+      const scroller = scrollama()
+
+      scroller
+        .setup({
+          step: "#scrolly .steps-container .step",
+          offset: 0.75,
+          debug: true,
+        })
+        .onStepEnter(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepin", { detail: { direction: direction } })
+          element.dispatchEvent(event)
+        })
+        .onStepExit(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepout", { detail: { direction: direction } })
+          element.dispatchEvent(event)
+        })
+
+      window.addEventListener("resize", scroller.resize)
+    </script>
+  </body>
+</html>

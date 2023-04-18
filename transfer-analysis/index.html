@@ -42,7 +42,7 @@
 
 		.container {
 			/* Remove the line below if you want a wider page */
-			max-width: 760px !important;
+			max-width: 700px !important;
 			color: #000000;
 			font-family: Georgia;
 		}
@@ -153,20 +153,65 @@
 	  
 			<div class="scrolly-overlay steps-container">
 			  <div class="step">
-				<h1>Enzo Fernandez</h1>
+				<div class="container">
+					<div class="content">
+						<h1>
+							$121 Million
+						</h1>
+						<p>
+							Enzo Fernandez was signed for a record fee by Chelsea Football Club this winter. This tranfer went down to the wire and saw Chelsea swoop in to sign him from Benfica.
+						</p>
+					</div>
+				</div>	
 			  </div>
 			  <div class="step" id="step2">
-				<p>Step two.</p>
+				<div class="container">
+					<div class="content">
+						<h1>
+							$83 Million
+						</h1>
+						<p>
+							Mykhailo Mudryk was taken away from Arsenal by Chelsea Football Club in this winter. The speedy winger was almost certain to sign for Arsenal before the signing was made.
+						</p>
+					</div>
+				</div>
 			  </div>
-			  <!-- <div class="step" id="step3">
-				<p>Step three.</p>
+			  <div class="step" id="step3">
+				<div class="container">
+					<div class="content">
+						<h1>
+							$49 Million
+						</h1>
+						<p>
+							Anthony Gordon. The 21 year old was signed by Newcastle from Everton. Newcastle's new owners from Saudi Arabia flexed some of their financial muscle and signed the acclaimed midfielder.
+						</p>
+					</div>
+				</div>
 			  </div>
 			  <div class="step" id="step4">
-				<p>Step four.</p>
+				<div class="container">
+					<div class="content">
+						<h1>
+							$42 Million
+						</h1>
+						<p>
+							Cody Gakpo was signed by Liverpool from PSV Eindhoven. The 21 year old winger was signed by Liverpool in a last ditch attempt to save their season.
+						</p>
+					</div>
+				</div>
 			  </div>
 			  <div class="step" id="step5">
-				<p>Step five.</p>
-			  </div> -->
+				<div class="container">
+					<div class="content">
+						<h1>
+							$41 Million
+						</h1>
+						<p>
+							Another Chelsea signing, Benoit Badiashile was signed from AS Monaco. The 20 year old defender was signed by Chelsea to bolster their defence.
+						</p>
+					</div>
+				</div>
+			  </div>
 			</div>
 		</div>
 		<div class="container">
@@ -201,16 +246,20 @@
 			})
 
 			d3.select("#step2").on('stepin', function() {
-			  d3.select(".sticky-thing img").attr("src", "image2.jpg")
+			  d3.select(".sticky-thing img").attr("src", "image2.jpeg")
 			})
 	  
-			// d3.select("#step3").on('stepin', function() {
-			//   d3.select(".sticky-thing img").attr("src", "image1.jpg")
-			// })
+			d3.select("#step3").on('stepin', function() {
+			  d3.select(".sticky-thing img").attr("src", "image3.png")
+			})
 	  
-			// d3.select("#step4").on('stepin', function() {
-			//   d3.select(".sticky-thing img").attr("src", "image2.jpg")
-			// })
+			d3.select("#step4").on('stepin', function() {
+			  d3.select(".sticky-thing img").attr("src", "image4.png")
+			})
+
+			d3.select("#step5").on('stepin', function() {
+			  d3.select(".sticky-thing img").attr("src", "image5.jpeg")
+			})
 	  
 		</script>
 	  
